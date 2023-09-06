@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from greenways_app.views import home_page, travel_learn_page, food_learn_page, building_learn_page, calculator_page, contact_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home_page, name='Greenways'),
+    path('travel-learn/', travel_learn_page, name='Sustainable Travel'),
+    path('food-learn/', food_learn_page, name='Sustainable Food'),
+    path('building-learn/', building_learn_page, name='Sustainable Building'),
+    path('calculator/', calculator_page, name='Carbon Travel Calculator'),
+    path('contact/', contact_page, name='Contact Us')
 ]
