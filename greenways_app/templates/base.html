@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -15,61 +15,62 @@
 
     <title>{% block title %}Green Ways{% endblock %}</title>
   </head>
-
   <body>
-    <div class="content">
-      <header>
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand" href="{% url 'home' %}">
-              <img
-                src="your-logo-image.png"
-                alt="Your Logo"
-                class="navbar-logo"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span><i class="fa-solid fa-bars"></i></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-center"
-              id="navbarNav"
-            >
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'learn' %}">Learn</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'calculator' %}"
-                    >Calculator</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contact_us' %}"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
+    <header>
+      <!-- Logo -->
+      <div class="container text-center mb-4">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img
+            src="your-logo-image.png"
+            alt="Your Logo"
+            class="navbar-logo img-fluid"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler btn btn-danger ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mr-md-4">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item mr-md-4">
+                <a class="nav-link" href="{% url 'learn' %}">Learn</a>
+              </li>
+              <li class="nav-item mr-md-4">
+                <a class="nav-link" href="{% url 'calculator' %}">Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-    </div>
+        </div>
+      </nav>
+    </header>
 
     {% block content %} {% endblock content %}
 
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/3b53fd0ccc.js" crossorigin="anonymous"></script>
+    <!-- jQuery Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
