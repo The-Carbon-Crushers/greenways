@@ -1,3 +1,33 @@
+.center-items {
+    align-items: center;
+}
+
 .calculate-style {
-    background-color: brown !important;
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+    height: 100%;
+    padding: 20px;
+    display: inline-flex;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.calc-board {
+    justify-content: space-around;
+}
+
+#km-usage {
+    border: 2px solid #59933d;
+    border-radius: 5px;
+    color: #bebfc4;
+}
+
+#travel-mode {
+    background-color: #59933d;
+    border: 2px solid #59933d;
+    border-radius: 5px;
+    color: #fff;
 }
