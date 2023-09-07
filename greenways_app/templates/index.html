@@ -1,8 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<div>
-    <h1>Home page Content</h1>
-</div>
+<div class="home-container">
+    <!-- Image (30% of screen width) -->
+    <div class="image-container">
+        <img src="{% static 'images/landing-image.jpeg' %}" alt="Landing image" class="landing-image">
+    </div>
+    <p><i>"Empowering Change Through ESG Wisdom"</i></p>
 
+    <!-- Horizontal Line -->
+    <hr class="separator">
+
+
+    <!-- Text (Centered below the image) -->
+    <div class="text-container">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    </div>
+</div>
 {% endblock content %}

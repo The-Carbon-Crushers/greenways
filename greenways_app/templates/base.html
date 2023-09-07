@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +13,11 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/style.css' %}"
+      type="text/css"
+    />
 
     {% block extra_css %}
     {% endblock %}
@@ -21,18 +27,18 @@
   <body>
     <header>
       <!-- Logo -->
-      <div class="container text-center mb-4">
-        <a class="navbar-brand" href="{% url 'home' %}">
+      <div class="container text-center">
+        <a href="{% url 'home' %}">
           <img
-            src="your-logo-image.png"
-            alt="Your Logo"
+            src="{% static 'images/greenways-logo.PNG' %}"
+            alt="Greenways Logo"
             class="navbar-logo img-fluid"
           />
         </a>
       </div>
 
       <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <button
             class="navbar-toggler btn btn-danger ml-auto"
@@ -93,7 +99,7 @@
     {% block content %} {% endblock content %}
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light">
+    <footer class="footer text-light">
       <!-- Apply "bg-dark" and "text-light" classes -->
       <div class="container">
         <div class="row">
