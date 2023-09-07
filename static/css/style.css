@@ -12,6 +12,13 @@ body {
     color: #ffffff;
 }
 
+.navbar-logo {
+    width: 40rem;
+    height: 20rem;
+    margin-top: 1rem;
+
+}
+
 .nav-link {
     color: #ffffff;
 }
