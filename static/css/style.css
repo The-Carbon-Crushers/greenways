@@ -29,6 +29,7 @@ nav a:hover {
     text-align: center;
     padding: 20px; /* Adjust padding as needed */
     padding-top: 0;
+    margin: 0 2rem;
 }
 
 .landing-image {
