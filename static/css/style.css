@@ -10,10 +10,12 @@ body {
 .navbar {
     background-color: #183C28;
     color: #ffffff;
+    padding: 1.3rem;
 }
 
 .nav-link {
     color: #ffffff;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -29,6 +31,11 @@ nav a:hover {
     text-align: center;
     padding: 20px; /* Adjust padding as needed */
     padding-top: 0;
+    margin: 0 2rem;
+}
+
+.image-container {
+    text-align: center;
 }
 
 .landing-image {
@@ -53,6 +60,7 @@ footer {
 
 footer i {
     color: #eec643;
+    padding: 0 20px;
     font-size: 2rem;
     transition: opacity 0.3s ease;
 }
@@ -61,3 +69,17 @@ footer i:hover {
     opacity: 0.5;
 }
 
+
+/* Media Queries */
+
+/* Media Queries for max-width: 650px  */
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 0.8rem;
+    }
+
+    footer i {
+        font-size: 1.5rem;
+    }
+}
