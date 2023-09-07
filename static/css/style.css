@@ -10,6 +10,7 @@ body {
 .navbar {
     background-color: #183C28;
     color: #ffffff;
+    padding: 1.3rem;
 }
 
 .nav-link {
@@ -30,6 +31,10 @@ nav a:hover {
     padding: 20px; /* Adjust padding as needed */
     padding-top: 0;
     margin: 0 2rem;
+}
+
+.image-container {
+    text-align: center;
 }
 
 .landing-image {
