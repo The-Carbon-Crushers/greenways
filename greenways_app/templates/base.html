@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +12,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/style.css' %}"
+      type="text/css"
     />
 
     <title>{% block title %}Green Ways{% endblock %}</title>
@@ -29,7 +35,7 @@
       </div>
 
       <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <button
             class="navbar-toggler btn btn-danger ml-auto"
@@ -90,7 +96,7 @@
     {% block content %} {% endblock content %}
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light">
+    <footer class="footer text-light">
       <!-- Apply "bg-dark" and "text-light" classes -->
       <div class="container">
         <div class="row">
