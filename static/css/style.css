@@ -20,6 +20,31 @@ nav a:hover {
     color: #eec643;
 }
 
+/* Styles for the home page content */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+    padding-top: 0;
+}
+
+.landing-image {
+    width: 100%;
+    height: 30%; /* Maintain aspect ratio */
+}
+
+/* Style for the horizontal line (separator) */
+.separator {
+    border: 1px solid #080808; /* Adjust the border style, color, and width as needed */
+    width: 100%;
+    margin: 20px 0; /* Adjust the margin as needed to control spacing */
+    margin-top: 0;
+}
+
+
 footer {
     margin-top: auto; /* Push the footer to the bottom */
     background-color: #183C28;
