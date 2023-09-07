@@ -69,3 +69,17 @@ footer i:hover {
     opacity: 0.5;
 }
 
+
+/* Media Queries */
+
+/* Media Queries for max-width: 650px  */
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 0.8rem;
+    }
+
+    footer i {
+        font-size: 1.5rem;
+    }
+}
