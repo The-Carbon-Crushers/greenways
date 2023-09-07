@@ -15,6 +15,7 @@ body {
 
 .nav-link {
     color: #ffffff;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -59,6 +60,7 @@ footer {
 
 footer i {
     color: #eec643;
+    padding: 0 20px;
     font-size: 2rem;
     transition: opacity 0.3s ease;
 }
