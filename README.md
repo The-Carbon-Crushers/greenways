@@ -148,6 +148,11 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ## **Media**
 
 * Wireframes were made using [**Balsamiq**](#https://balsamiq.com/)
+* Images were sourced from:
+  * Home page hero image [**Adobe Stock**](#https://stock.adobe.com/images/green-energy-concept/53889456?prev_url=detail)
+  * Sustainable Travel hero image [****]()
+  * Sustainable Food hero image [****]()
+  * Sustainable Building hero image [****]()
 * Logo was made using [**Looka**](#https://looka.com/)
 * Ideas for Learn pages taken from:
   * [**National Geographic**](#https://www.nationalgeographic.com/travel/article/what-sustainable-tourism-means)
