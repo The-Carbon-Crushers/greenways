@@ -67,11 +67,17 @@ nav a:hover {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Add a shadow with a slight offset to the right */
     background-color: #ffffff;
     padding: 20px;
+    margin-bottom: 0.5rem;
 }
 
 .text-container h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.text-container h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .text-container p {
@@ -119,6 +125,10 @@ footer i:hover {
 
     .text-container h1 {
         font-size: 25px;
+    }
+
+    .text-container h2 {
+        font-size: 0.9rem;
     }
 
     i {
