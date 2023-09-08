@@ -100,6 +100,8 @@ Initial chosen color scheme was a guide and was slightly adjusted during develop
 
 #### **Logo**
 
+![Logo](../greenways/staticfiles/images/greenways-logo.1707e282d984.PNG)
+
 #### **Nav bar**
 
 #### **Hero image**
@@ -146,6 +148,7 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ## **Media**
 
 * Wireframes were made using [**Balsamiq**](#https://balsamiq.com/)
+* Logo was made using [**Looka**](#https://looka.com/)
 
 ## **Future development**
 
