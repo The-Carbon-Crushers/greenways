@@ -149,6 +149,13 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 
 * Wireframes were made using [**Balsamiq**](#https://balsamiq.com/)
 * Logo was made using [**Looka**](#https://looka.com/)
+* Ideas for Learn pages taken from:
+  * [**National Geographic**](#https://www.nationalgeographic.com/travel/article/what-sustainable-tourism-means)
+  * [**Failte Ireland**](#https://www.failteireland.ie/FailteIreland/media/WebsiteStructure/Documents/Publications/sustainable-tourism-understanding-the-opportunity.pdf?ext=.pdf)
+  * [**EUFIC**](#https://www.eufic.org/en/food-safety/article/food-waste-in-europe-statistics-and-facts-about-the-problem?gclid=EAIaIQobChMIlr7iucibgQMV0NLtCh15pwkQEAAYBCAAEgIdUPD_BwE)
+  * [**Sustain**](#https://www.sustainweb.org/sustainablefood/what_is_sustainable_food/)
+  * [**Iberdola**](#https://www.iberdrola.com/sustainability/sustainable-green-buildings#:~:text=A%20green%20or%20sustainable%20building,in%20which%20it%20is%20located.)
+  * [**SCSI**](#https://scsi.ie/consumer/property-healthy-check/before-you-buy/)
 
 ## **Future development**
 
