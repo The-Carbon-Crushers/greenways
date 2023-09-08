@@ -1,5 +1,9 @@
 # **Greenways**
+
 ## **Site Overview**
+
+Welcome to Greenways - A Path to a Sustainable Future!<br>
+At Greenways, we are more than just a website! We are your dedicated partner on the journey towards a sustainable and environmentally conscious lifestyle. Our goal is clear - to empower individuals with the knowledge, tools, and inspiration needed to make a purposeful impact on our planet. As you navigate the site, you will find a wealth of information, from enlightening articles on sustainable travel, eco-friendly buildings, and responsible food choices to the practical tools that calculate your carbon footprint. We encourage you to explore, learn, and apply this knowledge to your daily life!
 
 ![Hero image](../greenways/static/images/landing-image.jpeg)
 
@@ -38,9 +42,29 @@
 
 ### **Target Audience**
 
+* Anyone interested in sustainable future and ideas how to achieve it
+* Enviromental enthusiasts
+* Home owners and builders
+* Students and educators
+* Sustainable travel enthusiasts
+* Foodies and health enthusiasts
+
 ### **User Stories**
 
+* As a user, I want to navigate the site easily
+* As a user, I want to know the main intention of the site
+* As a user, I want to know I can trust an organization
+* As a user, I want to be able to communicate through site or social media easily
+* As a user, I want to gain knowledge about greener future
+
 ### **Site Goals**
+
+* Create responsive website
+* Create easy to navigate website
+* To educate and inform users about sustainable lifestyle and give ideas to achieve it
+* To give option to calculate carbon footprints
+* Raise awareness
+* Inspire and empower action towards greener future
 
 ### **Wireframes**
 
@@ -63,6 +87,10 @@ For this project we made desktop and mobile wireframes to help with planning and
 
 ### **Color Scheme**
 
+Initial chosen color scheme was a guide and was slightly adjusted during development to suit site style.
+
+![Color scheme](../greenways/static/images/b509b5e5b51f63aaa05ff04aef593ae1.jpg)
+
 ### **Fonts**
 
 ## **Features**
@@ -75,6 +103,10 @@ For this project we made desktop and mobile wireframes to help with planning and
 #### **Nav bar**
 
 #### **Hero image**
+
+Hero image was chosen with site color scheme and sustainable future in mind, with a lightbulb as a symbol of ideas and innovations.
+
+![Hero image](../greenways/static/images/landing-image.jpeg)
 
 #### **Footer**
 
@@ -97,9 +129,23 @@ For this project we made desktop and mobile wireframes to help with planning and
 
 ## **Credits**
 
+* Credits and Thank You to all our team ***Carbon Crushers*** for input during the project and great communication via Slack channel chat, messages and calls.
+  * [Oran Cassidy](https://github.com/ocassidydev)
+  * [Christopher Faherty](https://github.com/Chrisfaherty)
+  * [Thomas-Tomo Domitrovic](https://github.com/Thomas-Tomo)
+  * [Adriele Teodoro](https://github.com/Adriele-lima)
+  * [Chinonso Olejeme](https://github.com/dcsndevs)
+  * [Viola Bergere](https://github.com/violaberg)
+
+* Thank You as well to [Erik Vodopivec Forsman](https://code-institute-room.slack.com/team/U03TJRS8ELX) for keeping an eye on our team.
+
 ## **Content**
 
+* All website content was written by our team ***Carbon Crushers*** mentioned in [**Credits section**](#credits)
+
 ## **Media**
+
+* Wireframes were made using [**Balsamiq**](#https://balsamiq.com/)
 
 ## **Future development**
 
