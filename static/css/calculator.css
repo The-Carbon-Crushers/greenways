@@ -1,0 +1,100 @@
+.center-items {
+    justify-content: center;
+}
+
+.calculate-style {
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+    height: 100%;
+    padding: 20px;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.calc-board {
+    justify-content: space-around;
+}
+
+.border-top {
+    width: 400px;
+    border-top: 1px solid rgb(65, 64, 64);
+}
+
+.border-right {
+    width: 600px;
+    border-right: 1px solid rgb(65, 64, 64);
+}
+
+#km-usage {
+    border: 2px solid #59933d;
+    border-radius: 5px;
+    color: rgb(65, 64, 64);
+    font-weight: bold;
+}
+
+#car-type {
+    background-color: #59933d;
+    border: 2px solid #59933d;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Media Queries */
+
+/* Media Queries for max-width: 650px  */
+@media screen and (max-width: 1250px) {
+    .border-top {
+        width: 300px;
+        border-top: 1px solid rgb(65, 64, 64);
+    }
+    
+    .border-right {
+        width: 450px;
+        border-right: 1px solid rgb(65, 64, 64);
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .border-top {
+        width: 200px;
+        border-top: 1px solid rgb(65, 64, 64);
+    }
+    
+    .border-right {
+        width: 400px;
+        border-right: 1px solid rgb(65, 64, 64);
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .border-top {
+        width: 0;
+    }
+    
+    .border-right {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 629px) {  
+    .border-right {
+        width: 100%;
+        border: none !important;
+        justify-content: center;
+    }
+
+    .calc-board {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3, p, h4 {
+        font-size: 15px;
+    }
+}

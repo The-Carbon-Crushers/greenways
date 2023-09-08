@@ -1,5 +1,107 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/calculator.css' %}" type="text/css"/>
+{% endblock %}
 
 {% block content %}
-    <h1>Calculator Content</h1>
+<section class="card calculate-style">
+    <div class="card-body disp-flex center-items">
+        <div class="row">
+            <div class="col-12 center-items">
+                <h2 class="card-title">
+                    <i class="fa-solid fa-leaf fa-flip-horizontal" style="color: #006f00;">
+                    </i> Footprint Carbon Calculator
+                    <i class="fa-solid fa-leaf" style="color: #006f00;"></i>
+                </h2>
+                <p>
+                    Check here how much carbon your car produces and check out on our website 
+                    what can you do to reduces this values and make a greener planet!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container disp-flex calc-board">
+        <div class="row border-right">
+            <div class="col">
+                <form class="form-group" id="calculator-form" onsubmit="calculateCarbonEmission() ">
+                    <div class="row p-1">
+                        <div class="col">
+                            <label for="travel-mode"><h3>Choose Car Type:</h3></label>
+                        </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col">
+                            <select name="car-type" id="car-type" required>
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option id="small-diesel-car" value="Small Diesel Car">Small Diesel Car</option>
+                                <option id="medium-diesel-car" value="Medium Diesel Car">Medium Diesel Car</option>
+                                <option id="big-diesel-car" value="Big Diesel Car">Big Diesel Car</option>
+                                <option id="small-petrol-car" value="Small Petrol Car">Small Petrol Car</option>
+                                <option id="medium-petrol-car" value="Medium Petrol Car">Medium Petrol Car</option>
+                                <option id="big-petrol-car" value="Big Petrol Car">Big Petrol Car</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col">
+                            <label for="km-usage"><h4>Km travelled per month</h4></label>
+                        </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col">
+                            <input type="number" id="km-usage" name="km-usage" required>
+                        </div>
+                    </div>
+                    <div class="row p-3">
+                        <div class="col">
+                            <button name="button-calculator" type="submit" class="btn btn-success">Click to
+                                Calculate</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row p-1">
+                    <div class="col">
+                        <h3>Month</h3>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col">
+                        <div id="result-month" class=" col"><h3>0</h3></div>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col border-top">
+                        <p>Ton. CO<sub>2</sub></p>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col">
+                        <h3>Year</h3>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col">
+                        <div id="result-year" class=" col"><h3>0</h3></div>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col border-top">
+                        <p>Ton. CO<sub>2</sub></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>           
+</section>
 {% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'js/calculator.js' %}"></script>
+<script src="https://kit.fontawesome.com/5d852ae91a.js" crossorigin="anonymous"></script>
+{% endblock %}
