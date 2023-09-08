@@ -31,7 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-ocassidydev-greenways-a1rwyegoqws.ws-eu104.gitpod.io',
-    '8000-ocassidydev-greenways-y13chb6125k.ws-eu104.gitpod.io' 
+    '8000-ocassidydev-greenways-y13chb6125k.ws-eu104.gitpod.io', 
+    '127.0.0.1'
     ]
 
 
@@ -82,12 +83,12 @@ WSGI_APPLICATION = 'greenways.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #   }
-#}
+# }
 
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))

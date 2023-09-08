@@ -18,6 +18,7 @@ header {
     background-color: #183C28;
     color: #ffffff;
     padding: 1.3rem;
+    position: sticky;
 }
 
 .nav-link {
