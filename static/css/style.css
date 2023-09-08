@@ -44,11 +44,22 @@ nav a:hover {
 
 .image-container {
     text-align: center;
+    position: relative;
 }
+
+.overlay-text {
+    position: absolute;
+    font-weight: 700;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+  }
 
 .landing-image {
     width: 100%;
-    height: 30%; /* Maintain aspect ratio */
 }
 
 /* Style for the horizontal line (separator) */
