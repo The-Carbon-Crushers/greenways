@@ -7,6 +7,10 @@ body {
     flex-direction: column; /* Make the body a flex container */
 }
 
+header {
+    background-color: #ffffff;
+}
+
 .navbar {
     background-color: #183C28;
     color: #ffffff;
