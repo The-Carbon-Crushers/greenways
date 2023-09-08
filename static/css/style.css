@@ -112,6 +112,10 @@ footer i:hover {
         padding: 0.8rem;
     }
 
+    .home-container {
+        margin: 0 1rem;
+    }
+
     .text-container h1 {
         font-size: 25px;
     }
