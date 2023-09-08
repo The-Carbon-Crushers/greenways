@@ -1,54 +1,69 @@
 {% extends 'base.html' %} {% block content %}
 <div class="home-container">
   <div class="text-container mt-4 text-center">
-    <h2>Reach Out To Us</h2>
+    <div id="message-box"></div>
+    <div id="form-box">
+      <h2>Reach Out To Us</h2>
 
-    <form id="contact" class="row g-6">
-      <div class="col-md-12">
-        <input
-          type="text"
-          placeholder="Name"
-          aria-label="Enter your name here"
-          class="form-control"
-          required
-        />
-      </div>
-      <div class="col-md-12">
-        <br />
-        <input type="email" placeholder="Email" class="form-control" required />
-      </div>
+      <form id="contact" class="row g-6" method="POST" action="https://formdump.codeinstitute.net/">
+        <div class="col-md-12">
+          <input
+            type="text"
+            placeholder="Name"
+            aria-label="Enter your name here"
+            class="form-control"
+            name="Name"
+            required
+          />
+        </div>
+        <div class="col-md-12">
+          <br />
+          <input type="email" placeholder="Email" class="form-control" name="Email" required />
+        </div>
 
-      <div class="col-md-12">
-        <br />
-        <input type="text" class="form-control" placeholder="+35312345678" />
-      </div>
+        <div class="col-md-12">
+          <br />
+          <input type="text" class="form-control" name="Phone" placeholder="+35312345678" />
+        </div>
 
-      <div class="col-md-12">
-        <br />
-        <textarea
-          type="text"
-          placeholder="Message"
-          class="form-control"
-          aria-label="Enter message here"
-          row="5"
-          required
-        ></textarea>
-      </div>
+        <div class="col-md-12">
+          <br />
+          <textarea
+            type="text"
+            placeholder="Message"
+            class="form-control"
+            id="text-area"
+            name="Message"
+            aria-label="Enter message here"
+            row="5"
+            required
+          ></textarea>
+        </div>
 
-      <div class="col-md-12">
-        <br />
-        <button type="submit" class="btn btn-success" aria-label="submit form">
-          Send
-        </button>
-        <button type="reset" class="btn btn-secondary" aria-label="Reset form">
-          Reset
-        </button>
-      </div>
-      <!-- <div class="col-md-6">
-                <button type="reset" aria-label="Reset form">Reset</button>
-            </div> -->
-    </form>
+        <div class="col-md-12">
+          <br />
+          <button type="button" class="btn btn-success" aria-label="submit form" onclick=" return messageAlert()">
+            Send
+          </button>
+          <button type="reset" class="btn btn-secondary" aria-label="Reset form">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+    
   </div>
 </div>
+<script>
+  function messageAlert () {
+  const message = document.getElementById('message-box');
+  const formBox =  document.getElementById('form-box');
+
+  message.innerHTML = "Your message has been successfully sent! \n We would get back shortly.";
+  console.log("done");
+  formBox.style.display = 'none';
+  }
+
+</script>
 
 {% endblock content %}
