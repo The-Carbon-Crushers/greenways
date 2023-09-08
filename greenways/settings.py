@@ -29,10 +29,10 @@ SECRET_KEY = 'django-insecure-ax6^id&mx_37&&seaziee_d!29dr!_#4h@h2z!z^0hlvocpz5g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '8000-ocassidydev-greenways-a1rwyegoqws.ws-eu104.gitpod.io',
-    '8000-ocassidydev-greenways-y13chb6125k.ws-eu104.gitpod.io' 
-    ]
+ALLOWED_HOSTS = ['8000-ocassidydev-greenways-a1rwyegoqws.ws-eu104.gitpod.io',
+                '8000-ocassidydev-greenways-y13chb6125k.ws-eu104.gitpod.io', 
+                '127.0.0.1','localhost', 'ci-greenways-a76ef9e9c4a6.herokuapp.com']
+
 
 
 # Application definition
@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'greenways.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #   }
-#}
+# }
 
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
