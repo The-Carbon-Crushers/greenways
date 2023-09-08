@@ -1,1 +1,20 @@
-contact
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="contact-container">
+        <h2>Reach Out To Us</h2>
+
+        <form id="contact">
+            <input type="text" placeholder="Name" aria-label="Enter your name here">
+            <br>
+            <input type="email" placeholder="Email">
+            <br>
+            <input type="text" placeholder="Message" aria-label="Enter message here">
+            <br>
+            <button type="submit" aria-label="submit form">Send</button>
+            <button type="reset" aria-label="Reset form">Reset</button>
+        </form>
+    </div>
+   
+    
+{% endblock content %}

@@ -1,13 +1,23 @@
-<!-- Just making this for testing, you can change -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello world
-</body>
-</html>
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Landing image -->
+<div class="image-container">
+  <img
+    src="{% static 'images/landing-image.jpeg' %}"
+    alt="Landing image"
+    class="landing-image"
+  />
+  <p><i>"Empowering Change Through ESG Wisdom"</i></p>
+</div>
+
+<!-- Horizontal Line -->
+<hr class="separator" />
+
+<div class="home-container">
+  <!-- About us section -->
+  <div class="text-container">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+  </div>
+</div>
+{% endblock content %}

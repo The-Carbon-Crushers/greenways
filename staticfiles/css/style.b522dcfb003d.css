@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: #bebfc4;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes at least the viewport height */
+    display: flex;
+    flex-direction: column; /* Make the body a flex container */
+}
+
+.navbar {
+    background-color: #183C28;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #eec643;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    background-color: #183C28;
+    padding-top: 25px;
+}
+
+footer i {
+    color: #eec643;
+    font-size: 2rem;
+    transition: opacity 0.3s ease;
+}
+
+footer i:hover {
+    opacity: 0.5;
+}
+

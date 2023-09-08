@@ -1,39 +1,108 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Greenways**
+## **Site Overview**
 
-Welcome,
+![Hero image](../greenways/static/images/landing-image.jpeg)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents:
+  * [**Greenways**](#greenways)
+    * [**Site Overview**](#site-overview)
+    * [**Planning Stage**](#planning-stage)
+      * [**Target Audience**](#target-audience)
+      * [**User Stories**](#user-stories)
+      * [**Site Goals**](#site-goals)
+      * [**Wireframes**](#wireframes)
+      * [**Color Scheme**](#color-scheme)
+      * [**Fonts**](#fonts)
+    * [**Features**](#features)
+      * [**Current Features**](#current-features)
+        * [**Header**](#header)
+        * [**Logo**](#logo)
+        * [**Nav bar**](#nav-bar)
+        * [**Hero image**](#hero-image)
+        * [**Footer**](#footer)
+      * [**Features left to implement**](#features-left-to-implement)
+    * [**Pages**](#pages)
+      * [**Home page**](#home-page)
+      * [**Learn pages**](#learn-pages)
+      * [**Calculator page**](#calculator-page)
+      * [**Contact Us page**](#contact-us-page)
+      * [**Confirmation page**](#confirmation-page)
+    * [**Testing**](#testing)
+    * [**Deployment**](#deployment)
+    * [**Credits**](#credits)
+    * [**Content**](#content)
+    * [**Media**](#media)
+    * [**Future development**](#future-development)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## **Planning Stage**
 
-## Codeanywhere Reminders
+### **Target Audience**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### **User Stories**
 
-`python3 -m http.server`
+### **Site Goals**
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### **Wireframes**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+For this project we made desktop and mobile wireframes to help with planning and design. While some changes were made as we went along, original wireframes can be found below:
 
-`http_server`
+* Desktop wireframes:
+  * [Home page](../greenways/static/images/home-page.png)
+  * [Learn pages](../greenways/static/images/learn-page.png)
+  * [Calculator page](../greenways/static/images/calculator-page-calculate.png)
+  * [Calculator results page](../greenways/static/images/calculator-page-results.png)
+  * [Contact Us page](../greenways/static/images/contact-us-page.png)
+  * [Confirmation page](../greenways/static/images/confirmation-page.png)
+* Mobile wireframes:
+  * [Home page](../greenways/static/images/home-page-mobile.png)
+  * [Learn pages](../greenways/static/images/learn-page-mobile.png)
+  * [Calculator page](../greenways/static/images/calculator-page-calculate-mobile.png)
+  * [Calculator results page](../greenways/static/images/calculator-page-results-mobile.png)
+  * [Contact Us page](../greenways/static/images/contact-us-page-mobile.png)
+  * [Confirmation page](../greenways/static/images/confirmation-page-mobile.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### **Color Scheme**
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### **Fonts**
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## **Features**
+### **Current features**
 
-To log into the Heroku toolbelt CLI:
+#### **Header**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### **Logo**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### **Nav bar**
 
----
+#### **Hero image**
 
-Happy coding!
+#### **Footer**
+
+### **Features left to implement**
+
+## **Pages**
+### **Home page**
+
+### **Learn pages**
+
+### **Calculator page**
+
+### **Contact Us page**
+
+### **Confirmation page**
+
+## **Testing**
+
+## **Deployment**
+
+## **Credits**
+
+## **Content**
+
+## **Media**
+
+## **Future development**
+
+
+
+
