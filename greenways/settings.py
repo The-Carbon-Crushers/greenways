@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-ax6^id&mx_37&&seaziee_d!29dr!_#4h@h2z!z^0hlvocpz5g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ocassidydev-greenways-98htto6eqpj.ws-eu104.gitpod.io','localhost']
+ALLOWED_HOSTS = ['8000-ocassidydev-greenways-98htto6eqpj.ws-eu104.gitpod.io','localhost', 'ci-greenways-a76ef9e9c4a6.herokuapp.com']
 
 
 # Application definition
