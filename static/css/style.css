@@ -55,9 +55,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid #183C28; /* Add a border */
+    border: 2px solid #eec643; /* Add a border */
     border-radius: 5px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow with a slight offset to the right */
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Add a shadow with a slight offset to the right */
     background-color: #ffffff;
     padding: 20px;
 }
@@ -69,7 +69,9 @@ nav a:hover {
 .text-container p {
     text-align: left;
     font-weight: 500;
+    font-size: 18px;
 }
+
 
 footer {
     margin-top: auto; /* Push the footer to the bottom */
