@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0;
     background-color: #bebfc4;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh; /* Ensure the body takes at least the viewport height */
     display: flex;
     flex-direction: column; /* Make the body a flex container */
+}
+
+header {
+    background-color: #ffffff;
 }
 
 .navbar {
@@ -51,6 +58,33 @@ nav a:hover {
     margin-top: 0;
 }
 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #eec643; /* Add a border */
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Add a shadow with a slight offset to the right */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-container p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+li {
+    text-align: left;
+    font-weight: 700;
+}
+
 
 footer {
     margin-top: auto; /* Push the footer to the bottom */
@@ -77,6 +111,18 @@ footer i:hover {
 
     .navbar {
         padding: 0.8rem;
+    }
+
+    .home-container {
+        margin: 0 1rem;
+    }
+
+    .text-container h1 {
+        font-size: 25px;
+    }
+
+    i {
+        font-size: small;
     }
 
     footer i {
