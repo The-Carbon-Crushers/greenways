@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+<div class="image-container">
+    <img
+      src="{% static 'images/build-landing-page.jpg' %}"
+      alt="Landing image"
+      class="landing-image"
+    />
+  </div>
     <div class="home-container mt-5">
         <div class="text-container col">
     <h1>Building for a Better Tomorrow: The Power of Sustainable Building Choices</h1>
