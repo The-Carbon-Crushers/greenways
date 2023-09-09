@@ -56,7 +56,7 @@ nav a:hover {
   position: absolute;
   font-weight: 700;
   top: 70%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background-color: rgba(
     255,
@@ -139,6 +139,10 @@ footer i:hover {
 
   .home-container {
     margin: 0 1rem;
+  }
+
+  .overlay-text {
+    left: 50%;
   }
 
   .text-container h1 {
