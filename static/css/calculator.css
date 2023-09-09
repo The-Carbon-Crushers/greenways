@@ -8,6 +8,9 @@
     margin: 50px;
     height: 100%;
     padding: 20px;
+    border: 2px solid #eec643;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .disp-flex {
@@ -32,7 +35,8 @@
     border: 2px solid #59933d;
     border-radius: 5px;
     color: rgb(65, 64, 64);
-    font-weight: bold;
+    width: 500px;
+    height: 40px;
 }
 
 #car-type {
@@ -40,6 +44,8 @@
     border: 2px solid #59933d;
     border-radius: 5px;
     color: #fff;
+    width: 500px;
+    height: 40px;
 }
 
 /* Media Queries */
@@ -54,6 +60,16 @@
     .border-right {
         width: 450px;
         border-right: 1px solid rgb(65, 64, 64);
+    }
+
+    #km-usage {
+        width: 100%;
+        height: 40px;
+    }
+    
+    #car-type {
+        width: 100%;
+        height: 40px;
     }
 }
 
@@ -83,18 +99,32 @@
     .border-right {
         width: 100%;
         border: none !important;
-        justify-content: center;
+        padding-left: 30px;
     }
-
+    
     .calc-board {
         flex-direction: column;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 15px;
+        font-weight: bold;
     }
 
-    h3, p, h4 {
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p, h4 {
         font-size: 15px;
+    }
+
+    .car-type {
+        width: 10px;
+    }
+
+    button {
+        margin-bottom: 15px !important;
     }
 }

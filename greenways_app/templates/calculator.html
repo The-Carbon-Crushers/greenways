@@ -25,45 +25,33 @@
     <div class="container disp-flex calc-board">
         <div class="row border-right">
             <div class="col">
-                <form class="form-group" id="calculator-form" onsubmit="calculateCarbonEmission() ">
-                    <div class="row p-1">
-                        <div class="col">
-                            <label for="travel-mode"><h3>Choose Car Type:</h3></label>
-                        </div>
+                <form id="calculator-form" onsubmit="calculateCarbonEmission()"">
+                    <div class=" form-group">
+                    <label for="travel-mode">
+                        <h4>Choose Car Type:</h4>
+                    </label>
+                    <select class="form-group" name="car-type" id="car-type" required>
+                        <option value="" selected disabled hidden>Choose here</option>
+                        <option id="small-diesel-car" value="Small Diesel Car">Small Diesel Car</option>
+                        <option id="medium-diesel-car" value="Medium Diesel Car">Medium Diesel Car</option>
+                        <option id="big-diesel-car" value="Big Diesel Car">Big Diesel Car</option>
+                        <option id="small-petrol-car" value="Small Petrol Car">Small Petrol Car</option>
+                        <option id="medium-petrol-car" value="Medium Petrol Car">Medium Petrol Car</option>
+                        <option id="big-petrol-car" value="Big Petrol Car">Big Petrol Car</option>
+                    </select>
                     </div>
-                    <div class="row p-1">
-                        <div class="col">
-                            <select name="car-type" id="car-type" required>
-                                <option value="" selected disabled hidden>Choose here</option>
-                                <option id="small-diesel-car" value="Small Diesel Car">Small Diesel Car</option>
-                                <option id="medium-diesel-car" value="Medium Diesel Car">Medium Diesel Car</option>
-                                <option id="big-diesel-car" value="Big Diesel Car">Big Diesel Car</option>
-                                <option id="small-petrol-car" value="Small Petrol Car">Small Petrol Car</option>
-                                <option id="medium-petrol-car" value="Medium Petrol Car">Medium Petrol Car</option>
-                                <option id="big-petrol-car" value="Big Petrol Car">Big Petrol Car</option>
-                            </select>
-                        </div>
+                    <div class="form-group">
+                        <label for="km-usage">
+                            <h4>Km travelled per month</h4>
+                        </label>
+                        <input class="form-group" type="number" id="km-usage" name="km-usage" required>
                     </div>
-                    <div class="row p-1">
-                        <div class="col">
-                            <label for="km-usage"><h4>Km travelled per month</h4></label>
-                        </div>
-                    </div>
-                    <div class="row p-1">
-                        <div class="col">
-                            <input type="number" id="km-usage" name="km-usage" required>
-                        </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <button name="button-calculator" type="submit" class="btn btn-success">Click to
-                                Calculate</button>
-                        </div>
-                    </div>
+                    <button name="button-calculator" type="submit" class="btn btn-success">Click to
+                        Calculate</button>
                 </form>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col">
                 <div class="row p-1">
                     <div class="col">
