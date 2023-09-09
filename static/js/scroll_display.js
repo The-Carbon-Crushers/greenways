@@ -1,4 +1,5 @@
 var elementVisibleDict = {
+    'image-container': 500,
     'landing-image': 500,
     'overlay-text': 150, 
     'home-container': 150
@@ -11,8 +12,6 @@ function reveal() {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementVisible = elementVisibleDict[name];
-        console.log(elementTop);
-        console.log(windowHeight - elementVisible);
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         } else {

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<div class="image-container">
+<div class="image-container reveal">
     <img
       src="{% static 'images/build-landing-page.jpg' %}"
       alt="Landing image"
@@ -11,7 +11,7 @@
   </div>
     <div class="home-container mt-5">
         <div class="text-container col">
-    <h1>Building for a Better Tomorrow: The Power of Sustainable Building Choices</h1>
+    <h1>Building for a Better Tomorrow: The Craft of Sustainable Building Choices</h1>
     <p>
         In an era where the environmental impact of construction is increasingly scrutinized, sustainable building choices have emerged as a beacon of hope. These choices are transforming the way we design, construct, and inhabit our buildings, paving the way for a more eco-conscious and resilient future. In this article, we'll delve into the significance of sustainable building choices and how they are reshaping the construction industry.<br>
         Traditional construction methods have often come at a high cost to our environment. From excessive energy consumption to resource depletion and waste generation, the construction industry has been a crucial contributor to environmental degradation. Key environmental concerns include:
@@ -98,3 +98,7 @@
 </div>
 </div>
 {% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'js/scroll_display.js' %}"></script>
+{% endblock %}
