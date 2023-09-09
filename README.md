@@ -51,7 +51,7 @@ At Greenways, we are more than just a website! We are your dedicated partner on 
 
 ### **User Stories**
 
-* As a user, I want to navigate the site easily
+* As a user, I want to navigate the site easily - both on desktop and mobile
 * As a user, I want to know the main intention of the site
 * As a user, I want to know I can trust an organization
 * As a user, I want to be able to communicate through site or social media easily
