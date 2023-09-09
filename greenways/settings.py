@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['8000-ocassidydev-greenways-a1rwyegoqws.ws-eu104.gitpod.io',
 
 
 
+
 # Application definition
 
 INSTALLED_APPS = [

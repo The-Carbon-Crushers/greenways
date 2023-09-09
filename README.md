@@ -87,18 +87,20 @@ For this project we made desktop and mobile wireframes to help with planning and
 
 ### **Color Scheme**
 
-Initial chosen color scheme was a guide and was slightly adjusted during development to suit site style.
+As color scheme we chose earthy color pallete to suit the greener future theme and the site style.
 
 ![Color scheme](../greenways/static/images/b509b5e5b51f63aaa05ff04aef593ae1.jpg)
 
 ### **Fonts**
 
-* For font we chose [**Google font**](#https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat) Montserrat Alternates to create easy to read and clean-looking website.
+As a font for website we chose [**Google font**](#https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat) Montserrat Alternates to create easy to read and clean-looking website.
 
 ## **Features**
 ### **Current features**
 
 #### **Header**
+
+![Header](../greenways/static/images/header.png)
 
 #### **Logo**
 
@@ -106,7 +108,10 @@ Initial chosen color scheme was a guide and was slightly adjusted during develop
 
 #### **Nav bar**
 
-Full Nav bar available on desktop sizes, with hamburger on mobile sizes.
+Fully responsive Nav bar available on desktop sizes, with hamburger to accomodate mobile sizes:
+
+![Nav bar](../greenways/static/images/nav-bar.png)
+![Mobile hamburger](../greenways/static/images/hamburger.png)
 
 #### **Hero image**
 
@@ -116,18 +121,38 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 
 #### **Footer**
 
+![Footer](../greenways/static/images/footer.png)
+
 ### **Features left to implement**
 
 ## **Pages**
 ### **Home page**
 
+![Home Page](../greenways/static/images/home-page-screenshot.png)
+
+![Home Page About Us](../greenways/static/images/home-page-about-us.png)
+
 ### **Learn pages**
+
+![Sustainable Building](../greenways/static/images/sustainable-building-img.png)
+
+![Sustainable Travel](../greenways/static/images/sustainable-travel.png)
+
+![Sustainable Building](../greenways/static/images/sustainable-food.png)
+
+![Learn article](../greenways/static/images/article.png)
 
 ### **Calculator page**
 
+![Calculator page](../greenways/static/images/calculator-screenshot.png)
+
 ### **Contact Us page**
 
+![Contact Us form](../greenways/static/images/contact-us.png)
+
 ### **Confirmation page**
+
+![Confirmation](../greenways/static/images/confirmation.png)
 
 ## **Testing**
 
@@ -169,6 +194,7 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 
 ## **Future development**
 
-
+* Add more filters to Carbon calculator, such as vehicle choice by fuel type.
+* Add extensive graphics for Carbon calculator
 
 
