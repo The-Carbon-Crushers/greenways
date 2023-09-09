@@ -10,6 +10,18 @@ body {
   flex-direction: column; /* Make the body a flex container */
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .logo-container {
   background-color: #fcfcfc;
 }
