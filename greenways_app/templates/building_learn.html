@@ -2,16 +2,17 @@
 {% load static %}
 
 {% block content %}
-<div class="image-container">
+<div class="image-container reveal">
     <img
       src="{% static 'images/build-landing-page.jpg' %}"
       alt="Landing image"
       class="landing-image"
     />
+    <p class="overlay-text"><i>Sustainable Building</i></p>
   </div>
     <div class="home-container mt-5">
-        <div class="text-container col">
-    <h1>Building for a Better Tomorrow: The Power of Sustainable Building Choices</h1>
+        <div class="text-container col reveal">
+    <h1>Building for a Better Tomorrow: The Craft of Sustainable Building Choices</h1>
     <p>
         In an era where the environmental impact of construction is increasingly scrutinized, sustainable building choices have emerged as a beacon of hope. These choices are transforming the way we design, construct, and inhabit our buildings, paving the way for a more eco-conscious and resilient future. In this article, we'll delve into the significance of sustainable building choices and how they are reshaping the construction industry.<br>
         Traditional construction methods have often come at a high cost to our environment. From excessive energy consumption to resource depletion and waste generation, the construction industry has been a crucial contributor to environmental degradation. Key environmental concerns include:
@@ -33,7 +34,7 @@
             </li>
         </ul>
     </div>
-    <div class="text-container col mt-5">
+    <div class="text-container col mt-5 reveal">
     <h2>
         The urgency of addressing environmental concerns has driven the adoption of sustainable building choices. These choices prioritize energy efficiency, resource conservation, and reduced environmental impact throughout a building's lifecycle. Key Sustainable Building Choices Include:
     </h2>
@@ -65,9 +66,9 @@
             </li>
         </ul>
     </div>
-    <div class="text-container col mt-5">
+    <div class="text-container col mt-5 reveal">
     <h2>
-        The benefits of sustainable building choices extend far beyond environmental considerations and when researched certainly feels essential part of any build. Let;s look into few benefits:
+        The benefits of sustainable building choices extend far beyond environmental considerations and when researched certainly feels essential part of any build. Let's look into few of the benefits:
     </h2>
         <ul>
             <li>Lower Operating Costs
@@ -98,3 +99,7 @@
 </div>
 </div>
 {% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'js/scroll_display.js' %}"></script>
+{% endblock %}

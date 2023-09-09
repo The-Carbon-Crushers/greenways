@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-if os.path.isfile('env.py'):
-    import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,11 +26,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ax6^id&mx_37&&seaziee_d!29dr!_#4h@h2z!z^0hlvocpz5g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-ocassidydev-greenways-a1rwyegoqws.ws-eu104.gitpod.io',
                 '8000-ocassidydev-greenways-y13chb6125k.ws-eu104.gitpod.io', 
-                '127.0.0.1','localhost', 'ci-greenways-a76ef9e9c4a6.herokuapp.com']
+                '127.0.0.1','localhost', 'ci-greenways-a76ef9e9c4a6.herokuapp.com','8000-ocassidydev-greenways-98htto6eqpj.ws-eu104.gitpod.io/']
 
 
 
@@ -43,13 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic'
     'django.contrib.staticfiles',
     'greenways_app'
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -89,9 +89,6 @@ DATABASES = {
   }
 }
 
-# DATABASES = {
-#    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-# }
 
 
 

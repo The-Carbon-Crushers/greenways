@@ -2,15 +2,16 @@
 {% load static %}
 
 {% block content %}
-<div class="image-container">
+<div class="image-container reveal">
     <img
       src="{% static 'images/food-landing-page.jpg' %}"
       alt="Landing image"
       class="landing-image"
     />
+    <p class="overlay-text"><i>Sustainable Food</i></p>
   </div>
 <div class="home-container mt-5">
-<div class="text-container  col">
+<div class="text-container col reveal">
     <h1>Nourishing Ourselves and Our Planet: The Power of Sustainable Food Choices</h1>
     <p>
         In a world where our choices can significantly impact the environment, one of the most powerful and immediate (yet very often forgotten or brushed aside) actions we can take is to make sustainable food choices. Our diets play an essential role not only in our own health but also in the health of the planet. Let's look into the how and why of sustainable food choices and their incredible benefits.<br>
@@ -33,7 +34,7 @@
             </li>
         </ul>
     </div>
-        <div class="text-container col mt-5">
+        <div class="text-container col mt-5 reveal">
         <h2>
             The good news is that we have the power to make our own sustainable food choices that can reduce these environmental impacts. Here are some steps you can take:
         </h2>
@@ -60,7 +61,7 @@
             </li>
         </ul>
     </div>
-    <div class="text-container col mt-5">
+    <div class="text-container col mt-5 reveal">
         <h2>
         Making sustainable food choices not only improves enviroment and helps the planet but also offers several personal benefits:
         </h2>
@@ -82,7 +83,7 @@
             </li>
         </ul>
     </div>
-    <div class="text-container col mt-5">
+    <div class="text-container col mt-5 reveal">
         <h2>
         Supporting sustainable food choices extends way beyond your personal dietary choices. There is also an option to advocate for change in your community and on a larger scale:
         </h2>
@@ -111,3 +112,7 @@
 </div>
 </div>
 {% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'js/scroll_display.js' %}"></script>
+{% endblock %}

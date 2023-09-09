@@ -1,19 +1,19 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <!-- Landing image -->
-<div class="image-container">
+<div class="image-container reveal">
   <img
     src="{% static 'images/landing-image.jpeg' %}"
     alt="Landing image"
     class="landing-image"
   />
-  <p class="overlay-text"><i>"Empowering Change Through ESG Wisdom"</i></p>
+  <p id="landing-page-overlay" class="overlay-text"><i>"Empowering Change Through ESG Wisdom"</i></p>
 </div>
 
 <!-- Horizontal Line -->
 <hr class="separator" />
 
-<div class="home-container">
+<div class="home-container reveal">
   <!-- About us section -->
   <div class="text-container mt-5 mb-5 col">
     <h1>About Us</h1>
@@ -49,3 +49,7 @@
   </div>
 </div>
 {% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'js/scroll_display.js' %}"></script>
+{% endblock %}
