@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-ocassidydev-greenways-a1rwyegoqws.ws-eu104.gitpod.io',
                 '8000-ocassidydev-greenways-y13chb6125k.ws-eu104.gitpod.io', 
-                '127.0.0.1','localhost', 'ci-greenways-a76ef9e9c4a6.herokuapp.com']
+                '127.0.0.1','localhost', 'ci-greenways-a76ef9e9c4a6.herokuapp.com','8000-ocassidydev-greenways-98htto6eqpj.ws-eu104.gitpod.io/']
 
 
 
