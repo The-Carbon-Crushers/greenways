@@ -87,7 +87,7 @@ For this project we made desktop and mobile wireframes to help with planning and
 
 ### **Color Scheme**
 
-Initial chosen color scheme was a guide and was slightly adjusted during development to suit site style.
+As color scheme we chose earthy color pallete to suit the greener future theme and the site style.
 
 ![Color scheme](../greenways/static/images/b509b5e5b51f63aaa05ff04aef593ae1.jpg)
 
@@ -129,6 +129,7 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ### **Home page**
 
 ![Home Page](../greenways/static/images/home-page-screenshot.png)
+
 ![Home Page About Us](../greenways/static/images/home-page-about-us.png)
 
 ### **Learn pages**
@@ -156,6 +157,31 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ## **Testing**
 
 ## **Deployment**
+
+### Deploying to Heroku
+* Go to the heroku.com site.
+* Click the signup button in the top right.
+* Create an account on heroku.com.
+* Confirm your account in the email heroku sent to your inbox.
+* Create a password.
+* Click and proceed.
+* Accept the terms of service.
+* Create a new app, create a name for your app "ci_pp3_ppm" and choose your region.
+* Go to the settings section.
+* Click Reveal Config Vars.
+* Input your .json file. name in the 'Key' field, copy the .json file and paste it in 'Value' field. Also add a key 'PORT' and value '8000'.
+* In the build packs section click add buildpack. For this project, I added 2 buildpacks 'Python' and 'node.js'. Make sure the Python build pack is above the Nodejs buildpack.
+* Go to "Deploy" in "Deployment method" select "GitHub".
+* Click 'Search' (Enter in your projects name that you have in your github repositry)and then 'Connect'. This project is connected to Chrisfaherty/CI_PP3_PPM.
+* Choose the branch you want to buid your app from "main" .
+* If prefered, click on "Enable Automatic Deploys", which keeps the app up to date when you push to git hub. Automatic deployments is turned on for this project.
+* If the project doesn't deploy after selecting automatic deploy . In the Manual deploy section click Deploy Branch to deploy your code, this is what I had to do.
+* Once the code is deployed it will show a button that you can click to view the deployed site. Then the project has sucessfully been deployed.
+
+### Forking the GitHub Repository
+* Go to the GitHub repository.
+* In the top right hand corner you can click on the fork button.
+* This will fork the repositry.
 
 ## **Credits**
 
@@ -193,6 +219,7 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 
 ## **Future development**
 
-
+* Add more filters to Carbon calculator, such as vehicle choice by fuel type.
+* Add extensive graphics for Carbon calculator
 
 

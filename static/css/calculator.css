@@ -13,6 +13,23 @@
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+#headingOne, #headingTwo {
+    height: 40px;
+    padding: 0 !important;
+}
+
+#collapseOne, #collapseTwo {
+    margin: 15px;
+}
+
+.collapse-button {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #212529;
+}
+
 .disp-flex {
     display: flex;
 }
@@ -31,7 +48,7 @@
     border-right: 1px solid rgb(65, 64, 64);
 }
 
-#km-usage {
+.miles-km-input {
     border: 2px solid #59933d;
     border-radius: 5px;
     color: rgb(65, 64, 64);
@@ -67,7 +84,7 @@
         border-right: 1px solid rgb(65, 64, 64);
     }
 
-    #km-usage {
+    .miles-km-input {
         width: 100%;
         height: 40px;
     }
@@ -90,7 +107,7 @@
     }
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 850px) {
     .border-top {
         width: 0;
     }
@@ -112,12 +129,12 @@
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
     }
 
@@ -131,5 +148,27 @@
 
     button {
         margin-bottom: 15px !important;
+    }
+
+    .calculate-style {
+        margin: 10px;
+    }
+
+    .calculator-form {
+        margin: -20px;
+    }
+
+    .calculate-style p {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .collapse-button {
+        font-size: 15px;
+    }
+    
+    .padding {
+        padding: 0 !important; 
     }
 }
