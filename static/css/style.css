@@ -64,11 +64,17 @@ nav a:hover {
   position: relative;
 }
 
+#landing-page-overlay {
+  top: 70% !important;
+  left: 30% !important;
+}
+
 .overlay-text {
+  font-size: xx-large;
   position: absolute;
   font-weight: 700;
-  top: 70%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(
     255,
