@@ -2,7 +2,8 @@ var elementVisibleDict = {
     'image-container': 500,
     'landing-image': 500,
     'overlay-text': 150, 
-    'home-container': 150
+    'home-container': 150,
+    'text-container': 50
 }
 
 function reveal() {
