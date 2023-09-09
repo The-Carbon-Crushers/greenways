@@ -1,6 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+<div class="image-container">
+    <img
+      src="{% static 'images/travel-landing-page.jpg' %}"
+      alt="Landing image"
+      class="landing-image"
+    />
+  </div>
+    <div class="home-container mt-5">
+    <div class="text-container col">
     <h1>Exploring the World Responsibly: The Art of Sustainable Travel Choices</h1>
     <p>
         Traveling the world is an enriching experience that broadens our horizons, advances cultural understanding, and creates lifelong memories. However, it's essential to recognize that the way we travel can have significant impacts on the environment, local communities, and cultures. Practising sustainable travel choices allows us to explore the world responsibly while leaving a positive legacy behind. Travel is one of the main contributors to carbon emissions, pollution, and habitat disruption. Air travel, in particular, releases extensive amounts of greenhouse gases into the atmosphere. Here's how our travel choices impact the environment:
@@ -21,7 +31,11 @@
                 </p>
             </li>
         </ul>
+    </div>
+        <div class="text-container col mt-5">
+        <h2>
         Fortunately, we can make sustainable travel choices that reduce these impacts and even contribute positively to the places we visit. Here are some options to think about:
+        </h2>
         <ul>
             <li>Offset Your Carbon Emissions
                 <p>
@@ -49,7 +63,11 @@
                 </p>
             </li>
         </ul>
+    </div>
+    <div class="text-container col mt-5">
+    <h2>
         While it might take a little more research, especially the first time around, sustainable travel choices offer a host of personal and collective benefits:
+    </h2>
         <ul>
             <li>Cultural Immersion
                 <p>
@@ -87,4 +105,6 @@
         </ul>
         Sustainable travel is about more than just exploring and visiting new places. It's about treading lightly on the Earth and leaving a positive impact on the destinations we cherish. By making mindful choices and promoting responsible travel, we can create a world where travel becomes a force for better, enriching both our lives and the world we explore.
     </p>
+</div>
+</div>
 {% endblock content %}
