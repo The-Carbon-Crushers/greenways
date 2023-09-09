@@ -1,17 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&display=swap");
 
 body {
   margin: 0;
   background-color: #bebfc4;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   min-height: 100vh; /* Ensure the body takes at least the viewport height */
   display: flex;
   flex-direction: column; /* Make the body a flex container */
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .logo-container {
-  background-color: #ffffff;
+  background-color: #fcfcfc;
 }
 
 header {
@@ -44,7 +56,7 @@ nav a:hover {
   text-align: center;
   padding: 20px; /* Adjust padding as needed */
   padding-top: 0;
-  margin: 0 2rem;
+  margin: 0 5rem;
 }
 
 .image-container {
@@ -56,7 +68,7 @@ nav a:hover {
   position: absolute;
   font-weight: 700;
   top: 70%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background-color: rgba(
     255,
@@ -97,12 +109,12 @@ nav a:hover {
 }
 
 .text-container h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .text-container p {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   font-size: 15px;
 }
@@ -139,6 +151,10 @@ footer i:hover {
 
   .home-container {
     margin: 0 1rem;
+  }
+
+  .overlay-text {
+    left: 50%;
   }
 
   .text-container h1 {
