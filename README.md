@@ -106,6 +106,8 @@ Initial chosen color scheme was a guide and was slightly adjusted during develop
 
 #### **Nav bar**
 
+Full Nav bar available on desktop sizes, with hamburger on mobile sizes.
+
 #### **Hero image**
 
 Hero image was chosen with site color scheme and sustainable future in mind, with a lightbulb as a symbol of ideas and innovations.
