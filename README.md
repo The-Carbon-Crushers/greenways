@@ -51,7 +51,7 @@ At Greenways, we are more than just a website! We are your dedicated partner on 
 
 ### **User Stories**
 
-* As a user, I want to navigate the site easily
+* As a user, I want to navigate the site easily - both on desktop and mobile
 * As a user, I want to know the main intention of the site
 * As a user, I want to know I can trust an organization
 * As a user, I want to be able to communicate through site or social media easily
@@ -93,6 +93,8 @@ Initial chosen color scheme was a guide and was slightly adjusted during develop
 
 ### **Fonts**
 
+* For font we chose [**Google font**](#https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat) Montserrat Alternates to create easy to read and clean-looking website.
+
 ## **Features**
 ### **Current features**
 
@@ -103,6 +105,8 @@ Initial chosen color scheme was a guide and was slightly adjusted during develop
 ![Logo](../greenways/staticfiles/images/greenways-logo.1707e282d984.PNG)
 
 #### **Nav bar**
+
+Full Nav bar available on desktop sizes, with hamburger on mobile sizes.
 
 #### **Hero image**
 
@@ -132,22 +136,28 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ## **Credits**
 
 * Credits and Thank You to all our team ***Carbon Crushers*** for input during the project and great communication via Slack channel chat, messages and calls.
-  * [Oran Cassidy](https://github.com/ocassidydev)
-  * [Christopher Faherty](https://github.com/Chrisfaherty)
-  * [Thomas-Tomo Domitrovic](https://github.com/Thomas-Tomo)
-  * [Adriele Teodoro](https://github.com/Adriele-lima)
-  * [Chinonso Olejeme](https://github.com/dcsndevs)
-  * [Viola Bergere](https://github.com/violaberg)
+  * [Oran Cassidy](https://github.com/ocassidydev) - Scrum master
+  * [Christopher Faherty](https://github.com/Chrisfaherty) - Deployment
+  * [Thomas-Tomo Domitrovic](https://github.com/Thomas-Tomo) - Design
+  * [Adriele Teodoro](https://github.com/Adriele-lima) - Calculator page creator
+  * [Chinonso Olejeme](https://github.com/dcsndevs) - Contact us page creator
+  * [Viola Bergere](https://github.com/violaberg) - Content creator
 
 * Thank You as well to [Erik Vodopivec Forsman](https://code-institute-room.slack.com/team/U03TJRS8ELX) for keeping an eye on our team.
 
 ## **Content**
 
-* All website content was written by our team ***Carbon Crushers*** mentioned in [**Credits section**](#credits)
+* All website content was written by Viola with few additions from our team ***Carbon Crushers*** mentioned in [**Credits section**](#credits)
 
 ## **Media**
 
 * Wireframes were made using [**Balsamiq**](#https://balsamiq.com/)
+* Font used for site was taken from [**Google fonts**](#https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat)
+* Images were sourced from:
+  * Home page hero image [**Adobe Stock**](#https://stock.adobe.com/images/green-energy-concept/53889456?prev_url=detail)
+  * Sustainable Travel hero image [**Vecteezy**](#https://www.vecteezy.com/photo/23847292-vintage-steam-train-in-a-foggy-forest-with-ai-generated)
+  * Sustainable Food hero image [**Vecteezy**](https://www.vecteezy.com/photo/28062500-freshness-and-variety-in-healthy-eating-nature-abundance-at-the-supermarket-generated-by-ai)
+  * Sustainable Building hero image [**Vecteezy**](#https://www.vecteezy.com/photo/23570246-form-of-a-house-shaped-pond-located-in-a-lush-forest-illustration-ai-generative)
 * Logo was made using [**Looka**](#https://looka.com/)
 * Ideas for Learn pages taken from:
   * [**National Geographic**](#https://www.nationalgeographic.com/travel/article/what-sustainable-tourism-means)
