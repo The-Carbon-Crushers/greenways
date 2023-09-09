@@ -87,7 +87,7 @@ For this project we made desktop and mobile wireframes to help with planning and
 
 ### **Color Scheme**
 
-Initial chosen color scheme was a guide and was slightly adjusted during development to suit site style.
+As color scheme we chose earthy color pallete to suit the greener future theme and the site style.
 
 ![Color scheme](../greenways/static/images/b509b5e5b51f63aaa05ff04aef593ae1.jpg)
 
@@ -129,6 +129,7 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ### **Home page**
 
 ![Home Page](../greenways/static/images/home-page-screenshot.png)
+
 ![Home Page About Us](../greenways/static/images/home-page-about-us.png)
 
 ### **Learn pages**
@@ -193,6 +194,7 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 
 ## **Future development**
 
-
+* Add more filters to Carbon calculator, such as vehicle choice by fuel type.
+* Add extensive graphics for Carbon calculator
 
 
