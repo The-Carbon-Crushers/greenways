@@ -107,7 +107,7 @@
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 25px;
         font-weight: bold;
     }
 
@@ -126,5 +126,13 @@
 
     button {
         margin-bottom: 15px !important;
+    }
+
+    .calculate-style {
+        margin: 10px;
+    }
+
+    .calculate-style p {
+        display: none;
     }
 }
