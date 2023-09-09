@@ -43,7 +43,7 @@
 
         <div class="col-md-12">
           <br />
-          <button type="button" class="btn btn-success" aria-label="submit form" onclick=" return messageAlert()">
+          <button type="button" class="btn btn-success" aria-label="submit form">
             Send
           </button>
           <button type="reset" class="btn btn-secondary" aria-label="Reset form">
@@ -58,7 +58,20 @@
 <script>
   /***
    * Function that displays successmessage */
-  
+  window.onload = function() {
+    document.getElementById('contact').addEventListener('submit', function(event) {
+        messageAlert();
+        emailjs.init('AYwhzh1-Eoum4wCkw');
+        event.preventDefault();
+        emailjs.sendForm('service_azokbzl', 'template_d7b0npe', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+  }
+
   function messageAlert () {
   const message = document.getElementById('message-box');
   const messageImage = document.getElementById('message-image')
