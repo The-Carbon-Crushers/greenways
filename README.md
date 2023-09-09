@@ -126,23 +126,25 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 ## **Pages**
 ### **Home page**
 
-![]()
+![Home Page](../greenways/static/images/home-page-about-us.png)
 
 ### **Learn pages**
 
-![]()
+![Sustainable Building](../greenways/static/images/sustainable-building-img.png)
 
-![]()
+![Sustainable Travel](../greenways/static/images/sustainable-travel.png)
 
-![]()
+![Sustainable Building](../greenways/static/images/sustainable-food.png)
+
+![Learn article](../greenways/static/images/article.png)
 
 ### **Calculator page**
 
-![]()
+![Calculator page](../greenways/static/images/)
 
 ### **Contact Us page**
 
-![]()
+![Contact Us form](../greenways/static/images/contact-us.png)
 
 ### **Confirmation**
 

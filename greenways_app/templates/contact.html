@@ -1,10 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 <div class="home-container">
-  <div class="text-container mt-5 text-center">
+  
+  <div class="text-container mt-5 text-center contact-background">
+
     <div id="message-box"></div>
     <div id="message-image"></div>
     <div id="form-box">
-      <h2>Reach Out To Us</h2>
+      <h3>Reach Out To Us</h3>
 
       <form id="contact" class="row g-6" method="POST" action="https://formdump.codeinstitute.net/">
         <div class="col-md-12">
@@ -55,17 +57,16 @@
     
   </div>
 </div>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
   /***
    * Function that displays successmessage */
-  emailjs.init('AYwhzh1-Eoum4wCkw')
+
   window.onload = function() {
       document.getElementById('contact').addEventListener('submit', function(event) {
+          emailjs.init('AYwhzh1-Eoum4wCkw')
           event.preventDefault();
-          // generate a five digit number for the contact_number variable
-          this.contact_number.value = Math.random() * 100000 | 0;
-          // these IDs from the previous steps
           emailjs.sendForm('service_azokbzl', 'template_d7b0npe', this)
               .then(function() {
                   console.log('SUCCESS!');
