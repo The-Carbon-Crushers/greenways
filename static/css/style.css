@@ -120,9 +120,13 @@ nav a:hover {
 }
 
 .text-container p {
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 15px;
+}
+
+#p-center {
+  text-align: center;
 }
 
 li {
@@ -159,12 +163,12 @@ footer i:hover {
     margin: 0 1rem;
   }
 
-  .overlay-text {
-    left: 50%;
-  }
-
   .text-container h1 {
     font-size: 25px;
+  }
+
+  .text-container p {
+    text-align: left;
   }
 
   .text-container h2 {
