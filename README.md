@@ -100,13 +100,17 @@ Initial chosen color scheme was a guide and was slightly adjusted during develop
 
 #### **Header**
 
+![](../greenways/static/images/header.png)
+
 #### **Logo**
 
 ![Logo](../greenways/staticfiles/images/greenways-logo.1707e282d984.PNG)
 
 #### **Nav bar**
 
-Full Nav bar available on desktop sizes, with hamburger on mobile sizes.
+Fully responsive Nav bar available on desktop sizes, with hamburger to accomodate mobile sizes:
+![Nav bar](../greenways/static/images/nav-bar.png)
+![Mobile hamburger](../greenways/static/images/hamburger.png)
 
 #### **Hero image**
 
@@ -116,18 +120,33 @@ Hero image was chosen with site color scheme and sustainable future in mind, wit
 
 #### **Footer**
 
+![Footer](../greenways/static/images/footer.png)
 ### **Features left to implement**
 
 ## **Pages**
 ### **Home page**
 
+![]()
+
 ### **Learn pages**
+
+![]()
+
+![]()
+
+![]()
 
 ### **Calculator page**
 
+![]()
+
 ### **Contact Us page**
 
-### **Confirmation page**
+![]()
+
+### **Confirmation**
+
+![Confirmation](../greenways/static/images/confirmation.png)
 
 ## **Testing**
 
