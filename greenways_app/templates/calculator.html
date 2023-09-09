@@ -6,86 +6,201 @@
 {% endblock %}
 
 {% block content %}
-<section class="card calculate-style">
-    <div class="card-body disp-flex center-items">
-        <div class="row">
-            <div class="col-12 center-items">
-                <h2 class="card-title">
-                    <i class="fa-solid fa-leaf fa-flip-horizontal" style="color: #006f00;">
-                    </i> Footprint Carbon Calculator
-                    <i class="fa-solid fa-leaf" style="color: #006f00;"></i>
-                </h2>
-                <p>
-                    Check here how much carbon your car produces and check out on our website 
-                    what can you do to reduces this values and make a greener planet!
-                </p>
+<section class="card accordion calculate-style" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="collapse-button btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    kg per km
+                </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class="collapse show card-header" aria-labelledby="headingOne"
+            data-parent="#accordionExample">
+            <div class="card-body disp-flex center-items padding">
+                <div class="row">
+                    <div class="col-12 center-items">
+                        <h2 class="card-title">
+                            <i class="fa-solid fa-leaf fa-flip-horizontal" style="color: #006f00;">
+                            </i> Footprint Carbon Calculator
+                            <i class="fa-solid fa-leaf" style="color: #006f00;"></i>
+                        </h2>
+                        <p>
+                            Check here how much carbon your car produces and check out on our website
+                            what can you do to reduces this values and make a greener planet!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container disp-flex calc-board">
+                <div class="row border-right">
+                    <div class="col">
+                        <form id="calculator-form-km" onsubmit="calculateCarbonEmissionKm()">
+                            <div class=" form-group">
+                                <label for="travel-mode">
+                                    <h4>Choose Car Type:</h4>
+                                </label>
+                                <select class="form-group" name="car-type" id="car-type" required>
+                                    <option value="" selected disabled hidden>Choose here</option>
+                                    <option id="small-diesel-car" value="Small Diesel Car">Small Diesel Car - up to 1.4 liters</option>
+                                    <option id="medium-diesel-car" value="Medium Diesel Car">Medium Diesel Car - 1.4 to 2.0 liters</option>
+                                    <option id="big-diesel-car" value="Big Diesel Car">Big Diesel Car - up to 2.0 liters</option>
+                                    <option id="small-petrol-car" value="Small Petrol Car">Small Petrol Car - up to 1.4 liters</option>
+                                    <option id="medium-petrol-car" value="Medium Petrol Car">Medium Petrol Car - 1.4 to 2.0 liters</option>
+                                    <option id="big-petrol-car" value="Big Petrol Car">Big Petrol Car - up to 2.0 liters</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="km-usage">
+                                    <h4>Km travelled per month</h4>
+                                </label>
+                                <input class="form-group miles-km-input" type="number" id="km-usage" name="km-usage" required>
+                            </div>
+                            <button name="button-calculator" type="submit" class="btn btn-success">Click to
+                                Calculate</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="row p-1">
+                            <div class="col">
+                                <h3>Month</h3>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col">
+                                <div id="result-month-km" class=" col">
+                                    <h3>0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col border-top">
+                                <p>ton. CO<sub>2</sub></p>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col">
+                                <h3>Year</h3>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col">
+                                <div id="result-year-km" class=" col">
+                                    <h3>0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col border-top">
+                                <p>ton. CO<sub>2</sub></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container disp-flex calc-board">
-        <div class="row border-right">
-            <div class="col">
-                <form id="calculator-form" onsubmit="calculateCarbonEmission()"">
-                    <div class=" form-group">
-                    <label for="travel-mode">
-                        <h4>Choose Car Type:</h4>
-                    </label>
-                    <select class="form-group" name="car-type" id="car-type" required>
-                        <option value="" selected disabled hidden>Choose here</option>
-                        <option id="small-diesel-car" value="Small Diesel Car">Small Diesel Car</option>
-                        <option id="medium-diesel-car" value="Medium Diesel Car">Medium Diesel Car</option>
-                        <option id="big-diesel-car" value="Big Diesel Car">Big Diesel Car</option>
-                        <option id="small-petrol-car" value="Small Petrol Car">Small Petrol Car</option>
-                        <option id="medium-petrol-car" value="Medium Petrol Car">Medium Petrol Car</option>
-                        <option id="big-petrol-car" value="Big Petrol Car">Big Petrol Car</option>
-                    </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="km-usage">
-                            <h4>Km travelled per month</h4>
-                        </label>
-                        <input class="form-group" type="number" id="km-usage" name="km-usage" required>
-                    </div>
-                    <button name="button-calculator" type="submit" class="btn btn-success">Click to
-                        Calculate</button>
-                </form>
-            </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="collapse-button btn btn-link btn-block text-left collapsed" type="button"
+                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    pounds per miles
+                </button>
+            </h2>
         </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <div class="row p-1">
-                    <div class="col">
-                        <h3>Month</h3>
-                    </div>
-                </div>
-                <div class="row p-1">
-                    <div class="col">
-                        <div id="result-month" class=" col"><h3>0</h3></div>
-                    </div>
-                </div>
-                <div class="row p-1">
-                    <div class="col border-top">
-                        <p>Ton. CO<sub>2</sub></p>
-                    </div>
-                </div>
-                <div class="row p-1">
-                    <div class="col">
-                        <h3>Year</h3>
-                    </div>
-                </div>
-                <div class="row p-1">
-                    <div class="col">
-                        <div id="result-year" class=" col"><h3>0</h3></div>
-                    </div>
-                </div>
-                <div class="row p-1">
-                    <div class="col border-top">
-                        <p>Ton. CO<sub>2</sub></p>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body disp-flex center-items padding">
+                <div class="row">
+                    <div class="col-12 center-items">
+                        <h2 class="card-title">
+                            <i class="fa-solid fa-leaf fa-flip-horizontal" style="color: #006f00;">
+                            </i> Footprint Carbon Calculator
+                            <i class="fa-solid fa-leaf" style="color: #006f00;"></i>
+                        </h2>
+                        <p>
+                            Check here how much carbon your car produces and check out on our website
+                            what can you do to reduces this values and make a greener planet!
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="container disp-flex calc-board">
+                <div class="row border-right">
+                    <div class="col">
+                        <form id="calculator-form-miles" onsubmit="calculateCarbonEmissionMiles()">
+                            <div class=" form-group">
+                                <label for="travel-mode">
+                                    <h4>Choose Car Type:</h4>
+                                </label>
+                                <select class="form-group" name="car-type" id="car-type" required>
+                                    <option value="" selected disabled hidden>Choose here</option>
+                                    <option id="small-diesel-car" value="Small Diesel Car">Small Diesel Car - up to 1.4 liters</option>
+                                    <option id="medium-diesel-car" value="Medium Diesel Car">Medium Diesel Car - 1.4 to 2.0 liters</option>
+                                    <option id="big-diesel-car" value="Big Diesel Car">Big Diesel Car - up to 2.0 liters</option>
+                                    <option id="small-petrol-car" value="Small Petrol Car">Small Petrol Car - up to 1.4 liters</option>
+                                    <option id="medium-petrol-car" value="Medium Petrol Car">Medium Petrol Car - 1.4 to 2.0 liters</option>
+                                    <option id="big-petrol-car" value="Big Petrol Car">Big Petrol Car - up to 2.0 liters</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="km-usage">
+                                    <h4>Miles travelled per month</h4>
+                                </label>
+                                <input class="form-group miles-km-input" type="number" id="miles-usage" name="miles-usage"
+                                    required>
+                            </div>
+                            <button name="button-calculator" type="submit" class="btn btn-success">Click to
+                                Calculate</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="row p-1">
+                            <div class="col">
+                                <h3>Month</h3>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col">
+                                <div id="result-month-miles" class=" col">
+                                    <h3>0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col border-top">
+                                <p>Tonne CO<sub>2</sub></p>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col">
+                                <h3>Year</h3>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col">
+                                <div id="result-year-miles" class=" col">
+                                    <h3>0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col border-top">
+                                <p>Tonne CO<sub>2</sub></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>           
+    </div>
 </section>
 {% endblock content %}
 
