@@ -1,4 +1,6 @@
 {% extends 'base.html' %} {% block content %}
+
+
 <div class="home-container">
   <div class="text-container mt-5 text-center">
     <div id="message-box"></div>
@@ -6,25 +8,25 @@
     <div id="form-box">
       <h2>Reach Out To Us</h2>
 
-      <form id="contact" class="row g-6" method="POST" action="https://formdump.codeinstitute.net/">
+      <form id="contact" class="row g-6" method="POST" action="/">
         <div class="col-md-12">
           <input
             type="text"
             placeholder="Name"
             aria-label="Enter your name here"
             class="form-control"
-            name="Name"
+            name="user_name"
             required
           />
         </div>
         <div class="col-md-12">
           <br />
-          <input type="email" placeholder="Email" class="form-control" name="Email" required />
+          <input type="email" placeholder="Email" class="form-control" name="user_email" required />
         </div>
 
         <div class="col-md-12">
           <br />
-          <input type="text" class="form-control" name="Phone" placeholder="+35312345678" />
+          <input type="text" class="form-control" name="contact_number" placeholder="+35312345678" />
         </div>
 
         <div class="col-md-12">
@@ -34,7 +36,7 @@
             placeholder="Message"
             class="form-control"
             id="text-area"
-            name="Message"
+            name="message"
             aria-label="Enter message here"
             row="5"
             required
@@ -43,7 +45,7 @@
 
         <div class="col-md-12">
           <br />
-          <button type="button" class="btn btn-success" aria-label="submit form">
+          <button type="submit" class="btn btn-success" aria-label="submit form">
             Send
           </button>
           <button type="reset" class="btn btn-secondary" aria-label="Reset form">
@@ -55,14 +57,16 @@
     
   </div>
 </div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
   /***
    * Function that displays successmessage */
+  
   window.onload = function() {
+    (function() {emailjs.init('AYwhzh1-Eoum4wCkw');})();
     document.getElementById('contact').addEventListener('submit', function(event) {
-        messageAlert();
-        emailjs.init('AYwhzh1-Eoum4wCkw');
         event.preventDefault();
+        messageAlert();
         emailjs.sendForm('service_azokbzl', 'template_d7b0npe', this)
             .then(function() {
                 console.log('SUCCESS!');
@@ -70,16 +74,17 @@
                 console.log('FAILED...', error);
             });
     });
-  }
+  };
 
   function messageAlert () {
-  const message = document.getElementById('message-box');
-  const messageImage = document.getElementById('message-image')
-  const formBox =  document.getElementById('form-box');
+    const message = document.getElementById('message-box');
+    const messageImage = document.getElementById('message-image');
+    const formBox = document.getElementById('form-box');
 
-  message.innerHTML = "Thank you for joining us on this inspiring journey towards a greener future! We will get back to you as soon as possible!";
-  messageImage.innerHTML += '<img src="../static/images/contact-us-page-banner.png" />'
-  formBox.style.display = 'none';
+    message.innerHTML = "Thank you for joining us on this inspiring journey towards a greener future! We will get back to you as soon as possible!";
+    messageImage.innerHTML += '<img src="../static/images/contact-us-page-banner.png" />';
+    formBox.style.display = 'none';
+    emailjs.send("service_azokbzl","template_d7b0npe");
   }
 
 </script>
