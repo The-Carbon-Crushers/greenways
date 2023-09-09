@@ -30,6 +30,10 @@
     color: #212529;
 }
 
+select {
+    font-size: 15px;
+}
+
 .disp-flex {
     display: flex;
 }
