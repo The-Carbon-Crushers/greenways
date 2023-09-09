@@ -66,7 +66,6 @@ nav a:hover {
 }
 
 #landing-page-overlay {
-  top: 70% !important;
   left: 30% !important;
 }
 
@@ -97,13 +96,6 @@ nav a:hover {
   width: 100%;
 }
 
-/* Style for the horizontal line (separator) */
-.separator {
-  border: 1px solid #080808; /* Adjust the border style, color, and width as needed */
-  width: 100%;
-  margin-top: 0;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
@@ -127,9 +119,13 @@ nav a:hover {
 }
 
 .text-container p {
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 15px;
+}
+
+#p-center {
+  text-align: center;
 }
 
 li {
@@ -166,12 +162,12 @@ footer i:hover {
     margin: 0 1rem;
   }
 
-  .overlay-text {
-    left: 50%;
-  }
-
   .text-container h1 {
     font-size: 25px;
+  }
+
+  .text-container p {
+    text-align: left;
   }
 
   .text-container h2 {
