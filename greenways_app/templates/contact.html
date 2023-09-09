@@ -2,10 +2,10 @@
 
 <section>
 <div class="home-container">
-  <div class="text-container mt-5 text-center">
+  <div class="text-container mt-5 text-center" id="form-box">
     <div id="message-box"></div>
     <div id="message-image"></div>
-    <div id="form-box">
+    <div>
       <h2>Reach Out To Us</h2>
 
       <form id="contact" class="row g-6" method="POST" action="/">
@@ -56,8 +56,34 @@
     </div>
     
   </div>
+  <div class="text-container mt-5 text-center" id="contact-message-on-submit">
+
+    <p></p><i>"Empowering Change Through ESG Wisdom"</i></p>
+
+  </div>
 </div>
 </section>
+<style>
+
+  #contact-message-on-submit {
+    background-image: url('../static/images/contact-us-page-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    height: 380px;
+    width: 92%;
+  }  
+
+​
+
+  #text-color {
+  font-weight: 700;
+  background-color: #ffffffcc; /* Optional: Add a semi-transparent background for better readability */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+</style>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
   /***
@@ -81,11 +107,12 @@
     const message = document.getElementById('message-box');
     const messageImage = document.getElementById('message-image');
     const formBox = document.getElementById('form-box');
+    const formBox2 =  document.getElementById('contact-message-on-submit');
 
-    message.innerHTML = "Thank you for joining us on this inspiring journey towards a greener future! We will get back to you as soon as possible!";
+    formBox2.innerHTML = "<br><br><br><div id='text-color'><font color='black'>Thank you for joining us on this inspiring journey towards a greener future! <br>We will get back to you as soon as possible!</font></div>";
     messageImage.innerHTML += '<img src="../static/images/contact-us-page-banner.png" />';
     formBox.style.display = 'none';
-    emailjs.send("service_azokbzl","template_d7b0npe");
+    formBox2.style.display = 'block';
   }
 
 </script>
