@@ -5,7 +5,7 @@
 Welcome to Greenways - A Path to a Sustainable Future!<br>
 At Greenways, we are more than just a website! We are your dedicated partner on the journey towards a sustainable and environmentally conscious lifestyle. Our goal is clear - to empower individuals with the knowledge, tools, and inspiration needed to make a purposeful impact on our planet. As you navigate the site, you will find a wealth of information, from enlightening articles on sustainable travel, eco-friendly buildings, and responsible food choices to the practical tools that calculate your carbon footprint. We encourage you to explore, learn, and apply this knowledge to your daily life!
 
-![Hero image](../greenways/static/images/landing-image.jpeg)
+![Hero image](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/landing-image.jpeg)
 
 ## Table of Contents:
   * [**Greenways**](#greenways)
@@ -89,7 +89,7 @@ For this project we made desktop and mobile wireframes to help with planning and
 
 As color scheme we chose earthy color pallete to suit the greener future theme and the site style.
 
-![Color scheme](../greenways/static/images/b509b5e5b51f63aaa05ff04aef593ae1.jpg)
+![Color scheme](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/b509b5e5b51f63aaa05ff04aef593ae1.jpg)
 
 ### **Fonts**
 
@@ -100,59 +100,59 @@ As a font for website we chose [**Google font**](#https://fonts.google.com/speci
 
 #### **Header**
 
-![Header](../greenways/static/images/header.png)
+![Header](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/header.png)
 
 #### **Logo**
 
-![Logo](../greenways/staticfiles/images/greenways-logo.1707e282d984.PNG)
+![Logo](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/greenways-logo.PNG)
 
 #### **Nav bar**
 
 Fully responsive Nav bar available on desktop sizes, with hamburger to accomodate mobile sizes:
 
-![Nav bar](../greenways/static/images/nav-bar.png)
-![Mobile hamburger](../greenways/static/images/hamburger.png)
+![Nav bar](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/nav-bar.png)
+![Mobile hamburger](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/hamburger.png)
 
 #### **Hero image**
 
 Hero image was chosen with site color scheme and sustainable future in mind, with a lightbulb as a symbol of ideas and innovations.
 
-![Hero image](../greenways/static/images/landing-image.jpeg)
+![Hero image](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/landing-image.jpeg)
 
 #### **Footer**
 
-![Footer](../greenways/static/images/footer.png)
+![Footer](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/footer.png)
 
 ### **Features left to implement**
 
 ## **Pages**
 ### **Home page**
 
-![Home Page](../greenways/static/images/home-page-screenshot.png)
+![Home Page](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/home-page-screenshot.png)
 
-![Home Page About Us](../greenways/static/images/home-page-about-us.png)
+![Home Page About Us](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/home-page-about-us.png)
 
 ### **Learn pages**
 
-![Sustainable Building](../greenways/static/images/sustainable-building-img.png)
+![Sustainable Building](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/sustainable-building-img.png)
 
-![Sustainable Travel](../greenways/static/images/sustainable-travel.png)
+![Sustainable Travel](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/sustainable-travel.png)
 
-![Sustainable Building](../greenways/static/images/sustainable-food.png)
+![Sustainable Building](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/sustainable-food.png)
 
-![Learn article](../greenways/static/images/article.png)
+![Learn article](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/article.png)
 
 ### **Calculator page**
 
-![Calculator page](../greenways/static/images/calculator-screenshot.png)
+![Calculator page](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/calculator-screenshot.png)
 
 ### **Contact Us page**
 
-![Contact Us form](../greenways/static/images/contact-us.png)
+![Contact Us form](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/contact-us.png)
 
 ### **Confirmation page**
 
-![Confirmation](../greenways/static/images/confirmation.png)
+![Confirmation](https://github.com/The-Carbon-Crushers/greenways/blob/main/static/images/confirmation.png)
 
 ## **Testing**
 
