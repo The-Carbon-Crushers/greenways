@@ -97,12 +97,12 @@ nav a:hover {
 }
 
 .text-container h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .text-container p {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   font-size: 15px;
 }
