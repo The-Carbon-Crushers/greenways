@@ -90,13 +90,6 @@ nav a:hover {
   width: 100%;
 }
 
-/* Style for the horizontal line (separator) */
-.separator {
-  border: 1px solid #080808; /* Adjust the border style, color, and width as needed */
-  width: 100%;
-  margin-top: 0;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
